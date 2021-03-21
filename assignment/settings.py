@@ -25,7 +25,7 @@ SECRET_KEY = '3qn2r=)l!3m-2@^7%jb)0i%h4^%mtr=w)uv)0p57-i@^h9+74+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shoulder-bone-byanubhav-iiitv.herokuapp.com']
+ALLOWED_HOSTS = ['shoulder-bone-by-anubhav-iiitv.herokuapp.com']
 
 
 # Application definition
