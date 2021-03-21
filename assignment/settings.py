@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from pathlib import Path
 import os.path
-SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+SITE_ROOT = os.path.dirname(os.path.dirname(__file__))
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -127,3 +127,8 @@ STATICFILES_DIRS = [
     'D:\My_Projects\3D-Shoulder-Bone-three.js\django\static',
 ]
 STATIC_URL = '/static/'
+
+
+TEMPLATE_DIRS = (
+    os.path.join(SITE_ROOT, 'templates/'),
+)
