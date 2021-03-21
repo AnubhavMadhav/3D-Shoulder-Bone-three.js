@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
-import os.path
-SITE_ROOT = os.path.dirname(os.path.dirname(__file__))
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,6 +41,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -58,7 +56,7 @@ ROOT_URLCONF = 'assignment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,8 +125,3 @@ STATICFILES_DIRS = [
     'D:\My_Projects\3D-Shoulder-Bone-three.js\django\static',
 ]
 STATIC_URL = '/static/'
-
-
-TEMPLATE_DIRS = (
-    os.path.join(SITE_ROOT, 'templates/'),
-)
