@@ -25,7 +25,7 @@ SECRET_KEY = '3qn2r=)l!3m-2@^7%jb)0i%h4^%mtr=w)uv)0p57-i@^h9+74+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shoulder-bone-by-anubhav-iiitv.herokuapp.com']
+ALLOWED_HOSTS = ['shoulder-bone-by-anubhav-iiitv.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'assignment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
