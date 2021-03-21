@@ -112,7 +112,6 @@ psycopg2==2.8.5
 py==1.9.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyAudio @ file:///C:/Users/Anubhav/pipwin/PyAudio-0.2.11-cp37-cp37m-win_amd64.whl
 pycodestyle==2.5.0
 pycparser==2.20
 pygame==1.9.6
